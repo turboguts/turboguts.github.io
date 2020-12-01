@@ -1,0 +1,54 @@
+@font-face {
+    font-family: opensans;
+    src: url(../media/fonts/OpenSans-Regular.woff);
+}
+
+body {
+    background-color: #ffffff;
+    color: #3d3d3d;
+    margin: 1em;
+    margin-top: 1em;
+    font-family: opensans;
+}
+
+/* divs */
+.container {
+    width: 70%;
+    margin: auto;
+    background-color: #efefef;
+    border-radius: 8px;
+    font-family: opensans;
+}
+
+.index {
+    text-align: justify;
+    line-height: 24px;
+    padding: 2em;
+    font-family: opensans;
+}
+
+/* text/media style */
+ul {
+    list-style-type: none
+}
+
+a {
+    text-decoration: none;
+    color: #3d3d3d;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active, a:hover {
+    position: relative;
+    top: 2px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 70vh;
+    padding-top: 1em;
+    padding-right: 1em;
+}
