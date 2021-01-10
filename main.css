@@ -60,7 +60,6 @@ body {
     font-family: opensans;
     line-height: 24px;
     word-wrap: break-word;
-
 }
 
 .line {
@@ -79,6 +78,13 @@ h1 {
 /* text/media style */
 ul {
     list-style-type: none;
+    padding-left: 4em;
+    padding-right: 4em;
+}
+
+li {
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 a {
