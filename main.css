@@ -88,7 +88,7 @@ li {
     margin-bottom: 1em;
 }
 
-li:before {
+li:before:hover {
     content: "\2A00";
     padding-right: 1em;
 }
