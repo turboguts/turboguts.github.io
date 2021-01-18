@@ -46,7 +46,7 @@ body {
     background-size: 4px;
 
     margin: auto;
-    margin-top: 1em;
+    margin-top: 5em;
     margin-bottom: 1em;
 }
 
@@ -55,12 +55,15 @@ body {
     text-align: justify;
 
     margin: auto;
-    padding: 2em;
+    padding: 3.5em;
 
     font-size: 14px;
     font-family: opensans;
     line-height: 24px;
     word-wrap: break-word;
+
+    overflow: auto;
+
 }
 
 .line {
@@ -73,6 +76,7 @@ h1 {
     font-family: pixel;
     font-size: 16px;
 
+    padding-right: 2em;
     color: var(--textCol)
 }
 
@@ -81,11 +85,12 @@ ul {
     list-style-type: none;
     padding-left: 4em;
     padding-right: 4em;
+    border-left: 1px solid;
+    border-color: var(--mainCol);
 }
 
 li {
-    margin-top: 1em;
-    margin-bottom: 1em;
+
 }
 
 li:before:hover {
@@ -133,18 +138,19 @@ img {
     display: flex;
     flex-wrap: nowrap;
 
-    width: 100%;
+
     margin-bottom: 1em;
 }
 
 .flex-container>div {
     width: 100%;
     text-align: left;
+
+
     padding-left: 2em;
     padding-top: 1em;
     padding-bottom: 1em;
 }
 
 .flex-container>div:hover {
-
 }
