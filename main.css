@@ -8,6 +8,7 @@
     src: url(../media/fonts/000webfont.woff);
 }
 
+
 html {
   font-size: unset !important;
   scroll-behavior: smooth;
@@ -34,7 +35,6 @@ body {
 .container {
     display: block;
     text-align: justify;
-    width: 60%;
 
     border-style: solid;
     border-width: 1px;
@@ -50,6 +50,17 @@ body {
     margin-bottom: 1em;
 }
 
+/* device scaling */
+@media (min-aspect-ratio: 1/1) {
+    .container {
+        width: 60%;
+    }
+}
+@media (max-aspect-ratio: 9/10) {
+    .container {
+        width: 90%;
+    }
+}
 .index {
     display: block;
     text-align: justify;
