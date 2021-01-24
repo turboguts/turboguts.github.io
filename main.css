@@ -32,6 +32,7 @@ body {
 }
 
 /* divs */
+
 .container {
     display: block;
     text-align: justify;
@@ -49,18 +50,6 @@ body {
     margin-top: 5em;
     margin-bottom: 1em;
 }
-
-/* device scaling */
-@media (min-aspect-ratio: 1/1) {
-    .container {
-        width: 60%;
-    }
-}
-@media (max-aspect-ratio: 9/10) {
-    .container {
-        width: 90%;
-    }
-}
 .index {
     display: block;
     text-align: justify;
@@ -74,11 +63,21 @@ body {
     word-wrap: break-word;
 
     overflow: auto;
-
 }
 
-.line {
-
+/* device scaling */
+@media (min-aspect-ratio: 1/1) {
+    .container {
+        width: 60%;
+    }
+}
+@media (max-aspect-ratio: 9/10) {
+    .container {
+        width: 90%;
+    }
+    .index {
+        font-size: 16px;
+    }
 }
 
 h1 {
@@ -124,6 +123,7 @@ a:active, a:hover {
 
 hr {
     border: none;
+
     height: 1px;
     width: 100%;
     background: var(--mainCol);
@@ -147,20 +147,24 @@ img {
 
 .flex-container {
     display: flex;
-    flex-wrap: nowrap;
-
-
-    margin-bottom: 1em;
+    flex-wrap: none;
+    padding-top: 2em;
+    padding-bottom: 2em;
 }
 
 .flex-container>div {
     width: 100%;
-    text-align: left;
+    text-align: centre;
 
+    margin-left: 4em;
+    margin-right: 4em;
 
+    padding-bottom: 2em;
     padding-left: 2em;
-    padding-top: 1em;
-    padding-bottom: 1em;
+    border-bottom-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+
+    box-shadow: 0px -13px 0.2em 0.05em var(--mainCol) inset;
 }
 
 .flex-container>div:hover {
