@@ -118,9 +118,12 @@ img {
 
 .flex-container {
     display: flex;
-    flex-wrap:wrap;
-    align-items: center;
-    justify-content: center;
+    flex-wrap: none;
+
+
+
+    justify-content: space-between;
+    align-items: space-around;
 
     padding-top: 3em;
     padding-bottom: 4em;
@@ -136,8 +139,9 @@ img {
 
 .flex-container>div {
     text-align: centre;
-    margin-left: 4em;
-    margin-right: 4em;
+
+    margin: 0 2em 0 2em;
+
 
     padding: 0 2em 2em 2em;
 
@@ -152,7 +156,7 @@ img {
 
 .flex-container>div:hover {
     transition: 0.25s;
-    box-shadow: 0px -15px 0.25em -0.05em var(--subCol) inset;
+    box-shadow: 0px -15px 0.25em -0.05em transparent inset;
 }
 
 /* device scaling */
@@ -162,7 +166,7 @@ img {
     }
 }
 
-@media (max-aspect-ratio: 9/10) {
+@media (max-aspect-ratio: 8/10) {
     .container {
         width: 90%;
     }
