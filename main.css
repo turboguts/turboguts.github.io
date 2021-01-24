@@ -8,10 +8,9 @@
     src: url(../media/fonts/000webfont.woff);
 }
 
-
 html {
-  font-size: unset !important;
-  scroll-behavior: smooth;
+    font-size: unset !important;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -19,49 +18,38 @@ body {
     --mainCol: #e1e1e1;
     --subCol: #d3d3d3;
 
-
     background-color: transparent;
-
     color: var(--textCol);
-
     position: relative;
     overflow-y: scroll;
-
     margin-top: 2em;
     margin-bottom: 4em;
 }
 
 /* divs */
-
 .container {
     display: block;
     text-align: justify;
-
     border-style: solid;
     border-width: 1px;
     border-radius: 5em;
-
     border-color: var(--mainCol);
-
     background-color: transparent;
     background-size: 4px;
-
     margin: auto;
     margin-top: 5em;
     margin-bottom: 1em;
 }
+
 .index {
     display: block;
     text-align: justify;
-
     margin: auto;
     padding: 3.5em;
-
     font-size: 14px;
     font-family: opensans;
     line-height: 24px;
     word-wrap: break-word;
-
     overflow: auto;
 }
 
@@ -71,10 +59,12 @@ body {
         width: 60%;
     }
 }
+
 @media (max-aspect-ratio: 9/10) {
     .container {
         width: 90%;
     }
+
     .index {
         font-size: 16px;
     }
@@ -85,7 +75,6 @@ h1 {
     font-weight: normal;
     font-family: pixel;
     font-size: 16px;
-
     padding-right: 2em;
     color: var(--textCol)
 }
@@ -99,12 +88,10 @@ ul {
     border-color: var(--mainCol);
 }
 
-li {
+li {}
 
-}
-
-li:before:hover {
-    content: "\2A00";
+li:before {
+    content: none;
     padding-right: 1em;
 }
 
@@ -113,7 +100,6 @@ a {
     background-color: transparent;
     border-radius: 5px;
     border-bottom-right-radius: 0px;
-
     color: var(--textCol);
 }
 
@@ -123,7 +109,6 @@ a:active, a:hover {
 
 hr {
     border: none;
-
     height: 1px;
     width: 100%;
     background: var(--mainCol);
@@ -134,7 +119,6 @@ p {
     border-right: 1px solid;
     padding-left: 2em;
     padding-right: 2em;
-
     border-color: var(--mainCol);
 }
 
@@ -150,35 +134,33 @@ img {
     flex-wrap: none;
     padding-top: 3em;
     padding-bottom: 4em;
-
-
     border-left: 1px solid;
     border-right: 1px solid;
     border-bottom: 1px solid;
     border-bottom-left-radius: 4em;
     border-bottom-right-radius: 4em;
-
     border-color: var(--mainCol);
-
     margin-bottom: 3em;
 }
 
 .flex-container>div {
-
-
     width: 100%;
     text-align: centre;
-
     margin-left: 4em;
     margin-right: 4em;
-
     padding-bottom: 2em;
     padding-left: 2em;
+
     border-bottom-left-radius: 2em;
     border-bottom-right-radius: 2em;
 
-    box-shadow: 0px -13px 0.2em 0.05em var(--mainCol) inset;
+    border: solid 1px;
+    border-color: var(--textCol);
+    border-top:none;
+
+    box-shadow: 0px -15px 0.25em -0.05em transparent inset;
 }
 
 .flex-container>div:hover {
+
 }
