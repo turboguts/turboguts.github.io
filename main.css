@@ -117,15 +117,14 @@ img {
 
 .flex-container {
     display: flex;
-    flex-wrap: none;
+    flex-wrap: wrap;
 
 
 
     justify-content: space-between;
     align-items: space-around;
 
-    padding-top: 3em;
-    padding-bottom: 4em;
+    padding: 2em 2em 2em 2em;
     margin-bottom: 3em;
 
     border-left: 1px solid;
@@ -139,7 +138,7 @@ img {
 .flex-container>div {
     text-align: centre;
 
-    margin: 0 2em 0 2em;
+    margin: 0 0 0 0;
 
 
     padding: 0 2em 2em 2em;
