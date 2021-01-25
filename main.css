@@ -59,9 +59,10 @@ h1 {
     font-weight: normal;
     font-family: pixel;
     font-size: 16px;
-    padding-right: 2em;
-    color: var(--textCol)
+
+    color: var(--textCol);
 }
+
 
 ul {
     list-style-type: none;
@@ -72,9 +73,9 @@ ul {
     border-color: var(--subCol);
 
 }
-
 li {
     /* list */
+    margin-bottom: 0.25em;
 }
 
 li:before {
@@ -125,7 +126,8 @@ img {
 
 
     justify-content: space-between;
-    align-items: space-around;
+    align-content: space-around;
+    align-items: flex-start;
 
     padding: 2em 2em 2em 2em;
     margin-bottom: 3em;
@@ -138,27 +140,23 @@ img {
     border-color: var(--subCol);
 }
 
-.flex-container>div {
-    text-align: centre;
+.flex-cell {
+    text-align: justify;
     flex-grow: 1;
-
     margin: 1em;
-
-
     padding: 0 2em 2em 2em;
 
     border-bottom-left-radius: 2em;
     border-bottom-right-radius: 2em;
-
     border: solid 1px;
     border-top: none 0px;
     border-color: var(--subCol);
     box-shadow: none;
 }
 
-.flex-container>div:hover {
-    transition: 0.25s;
-    box-shadow: 0px -15px 0.25em -0.25em transparent inset;
+.break {
+    flex-basis: 100%;
+    height: 0;
 }
 
 /* device scaling */
