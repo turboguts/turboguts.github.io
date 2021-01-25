@@ -68,6 +68,7 @@ ul {
     padding-left: 4em;
     padding-right: 4em;
     border-left: 1px solid;
+    border-right: 1px solid;
     border-color: var(--subCol);
 
 }
