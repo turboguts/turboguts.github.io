@@ -16,7 +16,7 @@ html {
 body {
     --textCol: #3d3d3d;
     --mainCol: #e1e1e1;
-    --subCol: #d3d3d3;
+    --subCol: #b2b2b2;
 
     background-color: transparent;
     color: var(--textCol);
@@ -37,15 +37,14 @@ body {
     background-color: transparent;
     background-size: 4px;
     margin: auto;
-    margin-top: 5em;
-    margin-bottom: 1em;
+    margin-top: 2em;
 }
 
 .index {
     display: block;
     text-align: justify;
     margin: auto;
-    padding: 3.5em;
+    padding: 5em 2em 4em 2em;
     font-size: 14px;
     font-family: opensans;
     line-height: 24px;
@@ -166,7 +165,7 @@ img {
 /* device scaling */
 @media (min-aspect-ratio: 1/1) {
     .container {
-        width: 60%;
+        width: 50%;
     }
 }
 
