@@ -11,9 +11,10 @@ function setup() {
 
 function draw() {
     background(255);
-    stroke(128);
+    stroke(50);
     noFill();
 
+    strokeWeight(1);
     translate(canvas.clientWidth / 2, height / 2)
     zoff += 0.005;
     beginShape();
@@ -35,7 +36,18 @@ function draw() {
         let x = r * cos(a);
         let y = r * sin(a);
 
-        curveVertex((x / 2.5), (y / 2.5));
+        curveVertex((x / 2.4), (y / 2.4));
+    }
+    endShape(CLOSE);
+    beginShape();
+    for (let a = 0; a < TWO_PI; a += 0.75) {
+        let xoff = cos(a) + mouseX / 1000;
+        let yoff = sin(a) + mouseY / 1000;
+        let r = map(noise(xoff, yoff, zoff), 0, 1, 1, 250);
+        let x = r * cos(a);
+        let y = r * sin(a);
+
+        curveVertex((x / 24), (y / 24));
     }
     endShape(CLOSE);
 
