@@ -14,9 +14,9 @@ html {
 }
 
 body {
-    --textCol: #3d3d3d;
+    --textCol: #444;
     --mainCol: #e1e1e1;
-    --subCol: #b2b2b2;
+    --subCol: #999;
 
     background-color: transparent;
     color: var(--textCol);
@@ -73,13 +73,16 @@ ul {
 
 }
 li {
-    /* list */
     margin-bottom: 0.25em;
 }
 
 li:before {
     content: none;
     padding-right: 1em;
+}
+
+li:hover {
+
 }
 
 a {
@@ -115,9 +118,10 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 1em;
+    padding-top: 2em;
     padding-bottom: 1em;
-    width: 100%;
+    width: 50%;
+
 }
 
 /* flex */
@@ -155,6 +159,10 @@ img {
     border-top: none 0px;
     border-color: var(--subCol);
     box-shadow: none;
+}
+
+.flex-cell:hover {
+
 }
 
 .break {
