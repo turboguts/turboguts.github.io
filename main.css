@@ -15,7 +15,7 @@ html {
 
 body {
     --textCol: #444;
-    --mainCol: #e1e1e1;
+    --mainCol: #000;
     --subCol: #999;
 
     background-color: transparent;
@@ -89,7 +89,6 @@ a {
     text-decoration: none;
     background-color: transparent;
     border-radius: 5px;
-    border-bottom-right-radius: 0px;
     color: var(--textCol);
 }
 
@@ -151,14 +150,13 @@ img {
     text-align: justify;
     flex-grow: 1;
     margin: 1em;
-    padding: 0 2em 2em 2em;
+    padding: 1em 2em 2em 2em;
 
-    border-bottom-left-radius: 2em;
-    border-bottom-right-radius: 2em;
+    border-radius: 2.5em;
     border: solid 1px;
-    border-top: none 0px;
+
     border-color: var(--subCol);
-    box-shadow: none;
+    box-shadow: none
 }
 
 .flex-cell:hover {
