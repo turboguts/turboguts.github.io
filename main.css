@@ -34,7 +34,7 @@ body {
 }
 
 ::selection {
-  background: var(--subCol);
+  background: #efefef;
 }
 
 
@@ -52,7 +52,6 @@ body {
     margin-top: 2em;
 
     width:50%;
-    box-shadow: 0 -1.5em 0.25em 1em #efefef inset;
 
 }
 .container2 {
@@ -152,6 +151,8 @@ p {
     border-right: var(--lineW) solid;
     padding-left: 2em;
     padding-right: 2em;
+    margin-left: 2em;
+    margin-right: 2em;
     border-color: var(--subCol);
 }
 
@@ -180,6 +181,7 @@ img {
     align-items: flex-start;
 
     padding: 2em 2em 2em 2em;
+
     margin-left: 2em;
     margin-right: 2em;
     margin-bottom: 3em;
@@ -200,10 +202,10 @@ img {
     padding-bottom: 3em;
 
     border-radius: 3em;
+    border-top-right-radius: 0em;
     border: solid var(--lineW);
 
     border-color: var(--subCol);
-    box-shadow: 0 -0.5em 0.25em 0.5em #efefef inset;
 }
 
 .flex-cell:hover {
