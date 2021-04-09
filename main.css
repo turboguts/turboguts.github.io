@@ -54,36 +54,13 @@ body {
     width:50%;
 
 }
-.container2 {
-    display:flex;
-    flex-wrap: wrap;
-
-
-
-    justify-content: space-between;
-    align-content: space-around;
-    align-items: flex-start;
-
-    border-style: solid;
-    border-width: var(--lineW);
-    border-radius: 12em;
-    border-color: var(--subCol);
-    background-color: transparent;
-
-    margin: auto;
-    margin-top: 2em;
-    width:25%;
-
-
-}
 
 .index {
     display: block;
     text-align: justify;
     margin: auto;
-    padding: 8em 2em 4em 2em;
-
-
+    padding: 2em;
+    padding-top: 3em;
 
     line-height: 24px;
     word-wrap: break-word;
@@ -124,26 +101,27 @@ li:hover {
 }
 
 a {
-
     text-decoration: none;
-    background-color: transparent;
-    border-radius: 2em;
-    color: var(--textCol);
-    border: solid 1px #efefef;
-    padding: 0.75em 1.5em 0.75em 1.5em;
+    color: white;
+    border-radius: 0.75em;
+    padding: 0.25em 0.75em 0.5em 0.75em;
+    border-style: solid;
+    border-width: var(--lineW);
+    border-radius: 12em;
+    border-color: var(--subCol);
 
 }
 
 a:active, a:hover {
     transition: 0.25s;
-    border: solid 1px var(--subCol);
+    color: var(--textCol);
 }
 
 hr {
     border: none;
     height: 1px;
     width: 100%;
-    background: var(--mainCol);
+    background: var(--subCol);
 }
 
 p {
@@ -151,6 +129,8 @@ p {
     border-right: var(--lineW) solid;
     padding-left: 2em;
     padding-right: 2em;
+
+    margin-top: 2em;
     margin-left: 2em;
     margin-right: 2em;
     border-color: var(--subCol);
@@ -165,7 +145,6 @@ img {
     padding-top: 2em;
     padding-bottom: 1em;
     width: 50%;
-
 }
 
 /* flex */
@@ -174,13 +153,11 @@ img {
     display: flex;
     flex-wrap: wrap;
 
-
-
     justify-content: space-between;
     align-content: space-around;
     align-items: flex-start;
 
-    padding: 2em 2em 2em 2em;
+    padding: 1em 2em 2em 2em;
 
     margin-left: 2em;
     margin-right: 2em;
@@ -189,8 +166,8 @@ img {
     border-left: var(--lineW) solid;
     border-right: var(--lineW) solid;
     border-bottom: var(--lineW) solid;
-    border-bottom-left-radius: 8em;
-    border-bottom-right-radius: 8em;
+    border-bottom-left-radius: 7em;
+    border-bottom-right-radius: 7em;
     border-color: var(--subCol);
 }
 
@@ -198,17 +175,34 @@ img {
     text-align: justify;
     flex-grow: 0;
     margin: 1em;
-    padding: 2em;
+    padding: 1em;
     padding-bottom: 3em;
 
-    border-radius: 3em;
-    border-top-right-radius: 0em;
+    border-radius: 5em;
+    border-top-right-radius: 5em;
     border: solid var(--lineW);
 
     border-color: var(--subCol);
 }
 
 .flex-cell:hover {
+    transition: 0.25s;
+    border-top-right-radius: 0em;
+
+}
+
+.flex-cell>a {
+    text-decoration: none;
+    background-color: transparent;
+    border-radius: 3em;
+    color: var(--textCol);
+    border: solid 1px #efefef;
+    padding: 0.5em 1.5em 0.75em 1.5em;
+}
+
+.flex-cell>a:active, .flex-cell>a:hover {
+    transition: 0.25s;
+    border: solid 1px var(--subCol);
 }
 
 
