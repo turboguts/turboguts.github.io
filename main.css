@@ -157,7 +157,7 @@ img {
     align-content: space-around;
     align-items: flex-start;
 
-    padding: 1em 2em 2em 2em;
+    padding: 1em 2em 3em 2em;
 
     margin-left: 2em;
     margin-right: 2em;
@@ -172,6 +172,7 @@ img {
 }
 
 .flex-cell {
+    transition: 0.25s;
     text-align: justify;
     flex-grow: 0;
     margin: 1em;
@@ -187,7 +188,7 @@ img {
 
 .flex-cell:hover {
     transition: 0.25s;
-    border-top-right-radius: 0em;
+    border-top-right-radius: 1em;
 
 }
 
