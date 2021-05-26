@@ -16,6 +16,9 @@ html {
     scroll-behavior: smooth;
 }
 
+
+
+
 body {
     --textCol: #000;
     --mainCol: #000;
@@ -27,44 +30,53 @@ body {
     color: var(--textCol);
     position: relative;
     overflow-y: scroll;
-    margin: 2em 2em 2em 2em;
+    /* margin: 2em 2em 2em 2em; */
     font-size: 14px;
     font-family: opensans;
 
 }
 
 ::selection {
-  background: #efefef;
+  /* background: #DDF1D5; */
 }
 
 
 /* divs */
 .container {
-    display: flex;
+    display: left;
     text-align: justify;
     border-style: solid;
     border-width: var(--lineW);
-    border-radius: 12em;
+    border-radius: 8em;
     border-color: var(--subCol);
     background-color: transparent;
 
     margin: auto;
     margin-top: 2em;
+    width: 40%;
 
-    width:50%;
 
 }
 
 .index {
     display: block;
     text-align: justify;
-    margin: auto;
-    padding: 2em;
-    padding-top: 3em;
+    margin: 1em;
+
+    padding: 3em;
+    padding-top: 5em;
+    margin-top: 6em;
 
     line-height: 24px;
     word-wrap: break-word;
     overflow: auto;
+
+
+    border-style: solid;
+    border-width: var(--lineW);
+    border-radius: 7em;
+    border-color: var(--subCol);
+
 }
 
 /* text/media style */
@@ -102,19 +114,17 @@ li:hover {
 
 a {
     text-decoration: none;
-    color: white;
-    border-radius: 0.75em;
-    padding: 0.25em 0.75em 0.5em 0.75em;
-    border-style: solid;
-    border-width: var(--lineW);
-    border-radius: 12em;
-    border-color: var(--subCol);
+    color: var(--textCol);
+
+
+
 
 }
 
 a:active, a:hover {
     transition: 0.25s;
-    color: var(--textCol);
+
+
 }
 
 hr {
@@ -161,44 +171,46 @@ img {
 
     margin-left: 2em;
     margin-right: 2em;
-    margin-bottom: 3em;
+    margin-bottom: 2em;
 
     border-left: var(--lineW) solid;
     border-right: var(--lineW) solid;
     border-bottom: var(--lineW) solid;
-    border-bottom-left-radius: 7em;
-    border-bottom-right-radius: 7em;
+    border-bottom-left-radius: 5em;
+    border-bottom-right-radius: 5em;
+
     border-color: var(--subCol);
 }
 
 .flex-cell {
     transition: 0.25s;
     text-align: justify;
-    flex-grow: 0;
-    margin: 1em;
-    padding: 1em;
-    padding-bottom: 3em;
+    flex-grow: 1;
 
-    border-radius: 5em;
-    border-top-right-radius: 5em;
-    border: solid var(--lineW);
+    padding: 1em;
+    padding-bottom: 2em;
+    margin: 1em;
+
+    border-radius: 1em;
+
 
     border-color: var(--subCol);
 }
 
 .flex-cell:hover {
     transition: 0.25s;
-    border-top-right-radius: 1em;
 
 }
 
 .flex-cell>a {
+    transition: 0.25s;
     text-decoration: none;
     background-color: transparent;
-    border-radius: 3em;
+    border-radius: 2em;
     color: var(--textCol);
     border: solid 1px #efefef;
     padding: 0.5em 1.5em 0.75em 1.5em;
+
 }
 
 .flex-cell>a:active, .flex-cell>a:hover {
