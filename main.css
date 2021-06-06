@@ -3,16 +3,6 @@
     src: url(../media/fonts/OpenSans-Regular.woff);
 }
 
-@font-face {
-    font-family: animoto;
-    src: url(../media/fonts/animoto.woff);
-}
-
-@font-face {
-    font-family: babymoto;
-    src: url(../media/fonts/babymoto.woff);
-}
-
 html {
     scroll-behavior: smooth;
 }
@@ -32,26 +22,23 @@ html {
     .container {
         width:  950px;
         --pad:  5px;
-        font-size: 18px;
     }
 }
 
 body {
     /* Var*/
-    --textCol:  #000;
-    --mainCol:  #000;
-    --subCol:   #a1a1a1;
-    --lineW:    1px;
-    font-smooth: never;
-    -webkit-font-smoothing : none;
+    --textCol:          #000;
+    --mainCol:          #000;
+    --subCol:           #a1a1a1;
+    --lineW:            1px;
 
-    background-color: transparent;
-    color: var(--textCol);
-    position: relative;
-    overflow-y: scroll;
+    background-color:   transparent;
+    color:              var(--textCol);
+    position:           relative;
+    overflow-y:         scroll;
 
-
-    font-family: "MS PGothic", sans-serif;
+    font-size: 18px;
+    font-family:        "MS PGothic", sans-serif;
 
 }
 
@@ -93,7 +80,6 @@ body {
 /* text/media style */
 h1 {
     font-weight:        normal;
-    font-size:          16px;
     color:              var(--textCol);
 }
 
@@ -168,8 +154,8 @@ img {
     border-bottom:      var(--lineW) solid;
     border-color:       var(--subCol);
 
-    border-bottom-left-radius:  25px;
-    border-bottom-right-radius: 25px;
+    border-bottom-left-radius:  calc(var(--pad) * 5);
+    border-bottom-right-radius: calc(var(--pad) * 5);
 }
 
 .flex-cell {
