@@ -37,6 +37,7 @@ body {
     position:           relative;
     overflow-y:         scroll;
 
+    font-weight:        lighter;
     font-size: 18px;
     font-family:        "MS PGothic", sans-serif;
 
