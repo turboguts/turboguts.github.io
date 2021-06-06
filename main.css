@@ -19,9 +19,10 @@ html {
 
 @media only screen and (max-width: 950px) {
 
-    /* Css for Desktop goes here like sample below*/
+    /* Css for Mobile goes here like sample below*/
     .container {
-        width: 100%;
+        width:  100%;
+        --pad:  10px;
     }
 }
 
@@ -29,21 +30,28 @@ html {
 
     /* Css for Desktop goes here like sample below*/
     .container {
-        width: 950px;
+        width:  950px;
+        --pad:  5px;
     }
 }
 
 body {
-    --textCol: #000;
-    --mainCol: #000;
-    --subCol: #a1a1a1;
-    --lineW: 1px;
+    /* Var*/
+    --textCol:  #000;
+    --mainCol:  #000;
+    --subCol:   #a1a1a1;
+    --lineW:    1px;
+    font-smooth: never;
+    -webkit-font-smoothing : none;
+
     background-color: transparent;
     color: var(--textCol);
     position: relative;
     overflow-y: scroll;
+
     font-size: 18px;
     font-family: "MS PGothic", sans-serif;
+
 }
 
 ::selection {
@@ -52,148 +60,145 @@ body {
 
 /* divs */
 .container {
-    display: left;
-    text-align: justify;
-    border-style: solid;
-    border-width: var(--lineW);
-    border-radius: 40px;
-    border-color: var(--subCol);
-    background-color: transparent;
+    display:            left;
+    text-align:         justify;
+    border-style:       solid;
+    border-width:       var(--lineW);
+    border-radius:      calc(var(--pad) * 8);
+    border-color:       var(--subCol);
+    background-color:   transparent;
 
-    margin-top: 10px;
-    margin-right: auto;
-    margin-left: auto;
+    margin-top:         calc(var(--pad) * 2);
+    margin-right:       auto;
+    margin-left:        auto;
 }
 
 .index {
-    display: block;
-    text-align: justify;
-    margin: 5px;
-    padding: 15px;
-    padding-top: 25px;
-    margin-top: 30px;
-    line-height: 24px;
-    word-wrap: break-word;
-    overflow: auto;
-    border-style: solid;
-    border-width: var(--lineW);
-    border-radius: 35px;
-    border-color: var(--subCol);
+    display:            block;
+    text-align:         justify;
+    margin:             var(--pad);
+    padding:            calc(var(--pad) * 3);
+    padding-top:        calc(var(--pad) * 5);
+    margin-top:         calc(var(--pad) * 6);
+    line-height:        calc(var(--pad) * 4);
+    word-wrap:          break-word;
+    overflow:           auto;
+    border-style:       solid;
+    border-width:       var(--lineW);
+    border-radius:      calc(var(--pad) * 7);
+    border-color:       var(--subCol);
 }
 
 /* text/media style */
 h1 {
-    font-weight: normal;
-    font-size: 16px;
-    color: var(--textCol);
+    font-weight:        normal;
+    font-size:          16px;
+    color:              var(--textCol);
 }
 
 ul {
-    list-style-type: none;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-left: var(--lineW) solid;
-    border-right: var(--lineW) solid;
-    border-color: var(--subCol);
+    list-style-type:    none;
+    padding-left:       calc(var(--pad) * 4);
+    padding-right:      calc(var(--pad) * 4);
+    border-left:        var(--lineW) solid;
+    border-right:       var(--lineW) solid;
+    border-color:       var(--subCol);
 }
 
 li {
-    margin-bottom: 5px;
+    margin-bottom:      var(--pad);
 }
 
 li:before {
-    content: none;
-    padding-right: 5px;
+    content:            none;
+    padding-right:      var(--pad);
 }
 
 li:hover {}
 
 a {
-    text-decoration: none;
-    color: var(--textCol);
+    text-decoration:    none;
+    color:              var(--textCol);
 }
 
 a:active, a:hover {
-    transition: 0.25s;
+
 }
 
 hr {
-    border: none;
-    height: 1px;
-    width: 100%;
-    background: var(--subCol);
+    border:             none;
+    height:             1px;
+    width:              100%;
+    background:         var(--subCol);
 }
 
 p {
-    border-left: var(--lineW) solid;
-    border-right: var(--lineW) solid;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    border-color: var(--subCol);
+    border-left:        var(--lineW) solid;
+    border-right:       var(--lineW) solid;
+    padding-left:       calc(var(--pad) * 2);
+    padding-right:      calc(var(--pad) * 2);
+    margin-top:         calc(var(--pad) * 2);
+    margin-left:        calc(var(--pad) * 2);
+    margin-right:       calc(var(--pad) * 2);
+    border-color:       var(--subCol);
 }
 
 img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 10px;
-    padding-bottom: 5px;
-    width: 50%;
+    display:            block;
+    margin-left:        auto;
+    margin-right:       auto;
+    padding-top:        calc(var(--pad) * 2);
+    padding-bottom:     var(--pad);
 }
 
 /* flex */
 .flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: space-around;
-    align-items: flex-start;
-    padding: 5px 10px 15px 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    border-left: var(--lineW) solid;
-    border-right: var(--lineW) solid;
-    border-bottom: var(--lineW) solid;
-    border-bottom-left-radius: 25px;
+    display:            flex;
+    flex-wrap:          wrap;
+    justify-content:    space-between;
+    align-content:      space-around;
+    align-items:        flex-start;
+    padding:            var(--pad) calc(var(--pad) * 2) calc(var(--pad) * 3) calc(var(--pad) * 2);
+    margin-left:        calc(var(--pad) * 2);
+    margin-right:       calc(var(--pad) * 2);
+    margin-bottom:      calc(var(--pad) * 2);
+    border-left:        var(--lineW) solid;
+    border-right:       var(--lineW) solid;
+    border-bottom:      var(--lineW) solid;
+    border-color:       var(--subCol);
+
+    border-bottom-left-radius:  25px;
     border-bottom-right-radius: 25px;
-    border-color: var(--subCol);
 }
 
 .flex-cell {
-    transition: 0.25s;
-    text-align: center;
-    flex-grow: 1;
-    padding: 5px;
-    padding-bottom: 10px;
-    margin: 5px;
-    border-radius: 5px;
-    border-color: var(--subCol);
+    text-align:         center;
+    flex-grow:          1;
+    padding:            var(--pad);
+    padding-bottom:     calc(var(--pad) * 2);
+    margin:             var(--pad);
+    border-radius:      var(--pad);
+    border-color:       var(--subCol);
 }
 
 .flex-cell:hover {
-    transition: 0.25s;
+
 }
 
 .flex-cell>a {
-    transition: 0.25s;
-    text-decoration: none;
-    background-color: transparent;
-    border-radius: 10px;
-    color: var(--textCol);
-    border: solid 1px #efefef;
-    padding: 5px 6px 6px 6px;
+    text-decoration:    none;
+    background-color:   transparent;
+    border-radius:      calc(var(--pad) * 2);
+    color:              var(--textCol);
+    border:             solid 1px #efefef;
+    padding:            var(--pad);
 }
 
 .flex-cell>a:active, .flex-cell>a:hover {
-    transition: 0.25s;
-    border: solid 1px var(--subCol);
+    border:             solid 1px var(--subCol);
 }
 
 .break {
-    flex-basis: 100%;
-    height: 0;
+    flex-basis:         100%;
+    height:             0;
 }
