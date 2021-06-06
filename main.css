@@ -13,6 +13,7 @@ html {
     .container {
         width:  100%;
         --pad:  5px;
+        zoom:  150%;
     }
 }
 
