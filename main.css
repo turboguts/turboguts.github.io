@@ -22,7 +22,7 @@ html {
     /* Css for Mobile goes here like sample below*/
     .container {
         width:  100%;
-        --pad:  10px;
+        --pad:  5px;
     }
 }
 
@@ -32,6 +32,7 @@ html {
     .container {
         width:  950px;
         --pad:  5px;
+        font-size: 18px;
     }
 }
 
@@ -49,7 +50,7 @@ body {
     position: relative;
     overflow-y: scroll;
 
-    font-size: 18px;
+
     font-family: "MS PGothic", sans-serif;
 
 }
@@ -68,7 +69,7 @@ body {
     border-color:       var(--subCol);
     background-color:   transparent;
 
-    margin-top:         calc(var(--pad) * 2);
+    margin-top:         calc(var(--pad) * 1);
     margin-right:       auto;
     margin-left:        auto;
 }
@@ -190,7 +191,7 @@ img {
     background-color:   transparent;
     border-radius:      calc(var(--pad) * 2);
     color:              var(--textCol);
-    border:             solid 1px #efefef;
+    border:             solid 1px #d1d1d1;
     padding:            var(--pad);
 }
 
