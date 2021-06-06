@@ -13,7 +13,15 @@ html {
     .container {
         width:  100%;
         --pad:  5px;
-        zoom:  150%;
+        initial-scale:  1.5
+    }
+
+    hr {
+        width:  100%;
+    }
+
+    container2 {
+        width:  100%;
     }
 }
 
@@ -23,6 +31,14 @@ html {
     .container {
         width:  950px;
         --pad:  5px;
+    }
+
+    hr {
+        width:  950px;
+    }
+
+    container2 {
+        width:  850px;
     }
 }
 
@@ -62,6 +78,17 @@ body {
     margin-right:       auto;
     margin-left:        auto;
 }
+.container2 {
+    display:            left;
+    text-align:         justify;
+    border-radius:      0;
+    background-color:   transparent;
+
+    margin-top:         calc(var(--pad) * 1);
+    margin-right:       auto;
+    margin-left:        auto;
+
+}
 
 .index {
     display:            block;
@@ -69,7 +96,7 @@ body {
     margin:             var(--pad);
     padding:            calc(var(--pad) * 3);
     padding-top:        calc(var(--pad) * 5);
-    margin-top:         calc(var(--pad) * 6);
+    margin-top:         calc(var(--pad) * 7);
     line-height:        calc(var(--pad) * 4);
     word-wrap:          break-word;
     overflow:           auto;
@@ -82,7 +109,7 @@ body {
 /* text/media style */
 h1 {
     font-weight:        normal;
-    color:              var(--textCol);
+    color:              var(--textCol) dashed ;
 }
 
 ul {
@@ -117,7 +144,6 @@ a:active, a:hover {
 hr {
     border:             none;
     height:             1px;
-    width:              100%;
     background:         var(--subCol);
 }
 
@@ -190,4 +216,17 @@ img {
 .break {
     flex-basis:         100%;
     height:             0;
+}
+
+.flex-container2 {
+    display:            flex;
+    flex-wrap:          wrap;
+    justify-content:    space-between;
+    align-content:      space-around;
+    align-items:        flex-start;
+    padding:            var(--pad) calc(var(--pad) * 2) calc(var(--pad) * 1) calc(var(--pad) * 2);
+    margin-left:        calc(var(--pad) * 2);
+    margin-right:       calc(var(--pad) * 2);
+
+
 }
