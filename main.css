@@ -12,34 +12,43 @@
     font-family: babymoto;
     src: url(../media/fonts/babymoto.woff);
 }
+
 html {
     scroll-behavior: smooth;
 }
 
+@media only screen and (max-width: 950px) {
 
+    /* Css for Desktop goes here like sample below*/
+    .container {
+        width: 100%;
+    }
+}
 
+@media only screen and (min-width: 950px) {
+
+    /* Css for Desktop goes here like sample below*/
+    .container {
+        width: 950px;
+    }
+}
 
 body {
     --textCol: #000;
     --mainCol: #000;
-    --subCol: #b1b1b1;
-
+    --subCol: #a1a1a1;
     --lineW: 1px;
-
     background-color: transparent;
     color: var(--textCol);
     position: relative;
     overflow-y: scroll;
-    /* margin: 2em 2em 2em 2em; */
-    font-size: 14px;
-    font-family: opensans;
-
+    font-size: 18px;
+    font-family: "MS PGothic", sans-serif;
 }
 
 ::selection {
-  /* background: #DDF1D5; */
+    /* background: #DDF1D5; */
 }
-
 
 /* divs */
 .container {
@@ -47,84 +56,65 @@ body {
     text-align: justify;
     border-style: solid;
     border-width: var(--lineW);
-    border-radius: 8em;
+    border-radius: 40px;
     border-color: var(--subCol);
     background-color: transparent;
 
-    margin: auto;
-    margin-top: 2em;
-    width: 40%;
-
-
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .index {
     display: block;
     text-align: justify;
-    margin: 1em;
-
-    padding: 3em;
-    padding-top: 5em;
-    margin-top: 6em;
-
+    margin: 5px;
+    padding: 15px;
+    padding-top: 25px;
+    margin-top: 30px;
     line-height: 24px;
     word-wrap: break-word;
     overflow: auto;
-
-
     border-style: solid;
     border-width: var(--lineW);
-    border-radius: 7em;
+    border-radius: 35px;
     border-color: var(--subCol);
-
 }
 
 /* text/media style */
 h1 {
     font-weight: normal;
-    font-family: animoto;
     font-size: 16px;
-
     color: var(--textCol);
-
 }
-
 
 ul {
     list-style-type: none;
-    padding-left: 4em;
-    padding-right: 4em;
+    padding-left: 20px;
+    padding-right: 20px;
     border-left: var(--lineW) solid;
     border-right: var(--lineW) solid;
     border-color: var(--subCol);
-
 }
+
 li {
-    margin-bottom: 0.25em;
+    margin-bottom: 5px;
 }
 
 li:before {
     content: none;
-    padding-right: 1em;
+    padding-right: 5px;
 }
 
-li:hover {
-
-}
+li:hover {}
 
 a {
     text-decoration: none;
     color: var(--textCol);
-
-
-
-
 }
 
 a:active, a:hover {
     transition: 0.25s;
-
-
 }
 
 hr {
@@ -137,87 +127,71 @@ hr {
 p {
     border-left: var(--lineW) solid;
     border-right: var(--lineW) solid;
-    padding-left: 2em;
-    padding-right: 2em;
-
-    margin-top: 2em;
-    margin-left: 2em;
-    margin-right: 2em;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
     border-color: var(--subCol);
 }
-
-
 
 img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 2em;
-    padding-bottom: 1em;
+    padding-top: 10px;
+    padding-bottom: 5px;
     width: 50%;
 }
 
 /* flex */
-
 .flex-container {
     display: flex;
     flex-wrap: wrap;
-
     justify-content: space-between;
     align-content: space-around;
     align-items: flex-start;
-
-    padding: 1em 2em 3em 2em;
-
-    margin-left: 2em;
-    margin-right: 2em;
-    margin-bottom: 2em;
-
+    padding: 5px 10px 15px 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
     border-left: var(--lineW) solid;
     border-right: var(--lineW) solid;
     border-bottom: var(--lineW) solid;
-    border-bottom-left-radius: 5em;
-    border-bottom-right-radius: 5em;
-
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
     border-color: var(--subCol);
 }
 
 .flex-cell {
     transition: 0.25s;
-    text-align: justify;
+    text-align: center;
     flex-grow: 1;
-
-    padding: 1em;
-    padding-bottom: 2em;
-    margin: 1em;
-
-    border-radius: 1em;
-
-
+    padding: 5px;
+    padding-bottom: 10px;
+    margin: 5px;
+    border-radius: 5px;
     border-color: var(--subCol);
 }
 
 .flex-cell:hover {
     transition: 0.25s;
-
 }
 
 .flex-cell>a {
     transition: 0.25s;
     text-decoration: none;
     background-color: transparent;
-    border-radius: 2em;
+    border-radius: 10px;
     color: var(--textCol);
     border: solid 1px #efefef;
-    padding: 0.5em 1.5em 0.75em 1.5em;
-
+    padding: 5px 6px 6px 6px;
 }
 
 .flex-cell>a:active, .flex-cell>a:hover {
     transition: 0.25s;
     border: solid 1px var(--subCol);
 }
-
 
 .break {
     flex-basis: 100%;
