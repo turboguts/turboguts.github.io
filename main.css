@@ -13,15 +13,7 @@ html {
     .container {
         width:  100%;
         --pad:  5px;
-        initial-scale:  1.5
-    }
-
-    hr {
-        width:  100%;
-    }
-
-    container2 {
-        width:  100%;
+        -webkit-text-size-adjust: none;
     }
 }
 
@@ -31,14 +23,6 @@ html {
     .container {
         width:  950px;
         --pad:  5px;
-    }
-
-    hr {
-        width:  950px;
-    }
-
-    container2 {
-        width:  850px;
     }
 }
 
@@ -77,17 +61,6 @@ body {
     margin-top:         calc(var(--pad) * 1);
     margin-right:       auto;
     margin-left:        auto;
-}
-.container2 {
-    display:            left;
-    text-align:         justify;
-    border-radius:      0;
-    background-color:   transparent;
-
-    margin-top:         calc(var(--pad) * 1);
-    margin-right:       auto;
-    margin-left:        auto;
-
 }
 
 .index {
