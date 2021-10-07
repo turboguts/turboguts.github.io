@@ -21,7 +21,7 @@ html {
 
     /* Css for Desktop goes here like sample below*/
     .container {
-        width:  950px;
+        width:  600px;
         --pad:  5px;
     }
 }
@@ -60,6 +60,21 @@ body {
     margin-top:         calc(var(--pad) * 1);
     margin-right:       auto;
     margin-left:        auto;
+}
+
+.sticky {
+    display:            left;
+    text-align:         justify;
+    border-style:       solid;
+    border-width:       var(--lineW);
+    border-radius:      calc(var(--pad) * 8);
+    border-color:       var(--subCol);
+    background-color:   transparent;
+
+    margin-top:         calc(var(--pad) * 1);
+    margin-right:       auto;
+    margin-left:        auto;
+    position: fixed;
 }
 
 .index {
@@ -134,9 +149,23 @@ img {
     display:            block;
     margin-left:        auto;
     margin-right:       auto;
-    padding-top:        calc(var(--pad) * 2);
-    padding-bottom:     var(--pad);
+
+    object-fit: cover;
+    width:              90%;
+    border:             var(--lineW) solid;
+    border-color:       var(--subCol);
+    border-radius:      calc(var(--pad) * 2);
 }
+
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marquee:hover span {
+  animation-play-state: paused;
+}
+
 
 /* flex */
 .flex-container {
