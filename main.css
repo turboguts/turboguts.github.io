@@ -151,7 +151,7 @@ img {
     margin-right:       auto;
 
     object-fit: cover;
-    width:              90%;
+    width:              80%;
     border:             var(--lineW) solid;
     border-color:       var(--subCol);
     border-radius:      calc(var(--pad) * 2);
