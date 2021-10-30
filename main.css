@@ -12,7 +12,7 @@ html {
     /* Css for Mobile goes here like sample below*/
     .container {
         width:  100%;
-        --pad:  5px;
+        --pad:  3px;
         -webkit-text-size-adjust: none;
     }
 }
@@ -22,7 +22,7 @@ html {
     /* Css for Desktop goes here like sample below*/
     .container {
         width:  600px;
-        --pad:  5px;
+        --pad:  4.5px;
     }
 }
 
@@ -44,7 +44,7 @@ body {
 }
 
 ::selection {
-    /* background: #DDF1D5; */
+    background: #e1e1e1;
 }
 
 /* divs */
@@ -132,6 +132,7 @@ hr {
     border:             none;
     height:             1px;
     background:         var(--subCol);
+    width: calc(100% - calc(var(--pad) * 8));
 }
 
 p {
@@ -142,7 +143,10 @@ p {
     margin-top:         calc(var(--pad) * 2);
     margin-left:        calc(var(--pad) * 2);
     margin-right:       calc(var(--pad) * 2);
+    margin-bottom:      calc(var(--pad) * 2);
     border-color:       var(--subCol);
+
+
 }
 
 img {
