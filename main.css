@@ -3,6 +3,12 @@
     src: url(../media/fonts/OpenSans-Regular.woff);
 }
 
+@font-face {
+    font-family: obelus;
+    src: url(../media/fonts/ObelusDwarf.woff);
+}
+
+
 html {
     scroll-behavior: smooth;
 }
@@ -39,7 +45,7 @@ body {
     overflow-y:         scroll;
 
     font-weight:        lighter;
-    font-size: 18px;
+    font-size:          18px;
     font-family:        "MS PGothic", sans-serif;
 }
 
@@ -94,9 +100,17 @@ body {
 }
 
 /* text/media style */
+
+
+
 h1 {
+    background-color:   transparent;
+    color:              var(--textCol);
+    position:           relative;
+
     font-weight:        normal;
-    color:              var(--textCol) dashed ;
+    font-family:        obelus;
+    color:              var(--textCol);
 }
 
 ul {
