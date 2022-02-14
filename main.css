@@ -29,6 +29,7 @@ html {
 body {
     /* Var*/
     --textCol:          #000;
+    --linkCol:          #0000ff;
     --mainCol:          #000;
     --subCol:           #a1a1a1;
     --lineW:            1px;
@@ -114,7 +115,7 @@ li:hover {}
 
 a {
     text-decoration:    none;
-
+    color:              var(--linkCol);
 }
 
 a:active, a:hover {
