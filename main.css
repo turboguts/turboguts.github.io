@@ -3,12 +3,6 @@
     src: url(../media/fonts/OpenSans-Regular.woff);
 }
 
-@font-face {
-    font-family: obelus;
-    src: url(../media/fonts/ObelusDwarf.woff);
-}
-
-
 html {
     scroll-behavior: smooth;
 }
@@ -45,7 +39,7 @@ body {
     overflow-y:         scroll;
 
     font-weight:        lighter;
-    font-size:          18px;
+    font-size:          16px;
     font-family:        "MS PGothic", sans-serif;
 }
 
@@ -66,21 +60,6 @@ body {
     margin-top:         calc(var(--pad) * 1);
     margin-right:       auto;
     margin-left:        auto;
-}
-
-.sticky {
-    display:            left;
-    text-align:         justify;
-    border-style:       solid;
-    border-width:       var(--lineW);
-    border-radius:      calc(var(--pad) * 8);
-    border-color:       var(--subCol);
-    background-color:   transparent;
-
-    margin-top:         calc(var(--pad) * 1);
-    margin-right:       auto;
-    margin-left:        auto;
-    position: fixed;
 }
 
 .index {
@@ -108,8 +87,8 @@ h1 {
     color:              var(--textCol);
     position:           relative;
 
-    font-weight:        normal;
-    font-family:        obelus;
+    font-weight:        lighter;
+    font-family:        "MS PGothic";
     color:              var(--textCol);
 }
 
@@ -135,7 +114,7 @@ li:hover {}
 
 a {
     text-decoration:    none;
-    color:              var(--textCol);
+
 }
 
 a:active, a:hover {
@@ -223,7 +202,7 @@ img {
     text-decoration:    none;
     background-color:   transparent;
     border-radius:      calc(var(--pad) * 2);
-    color:              var(--textCol);
+
     border:             solid 1px #d1d1d1;
     padding:            var(--pad);
 }
