@@ -22,7 +22,7 @@ html {
     /* Css for Desktop goes here like sample below*/
     .container {
         width:  600px;
-        --pad:  5.5px;
+        --pad:  4px;
     }
 }
 
